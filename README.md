@@ -30,7 +30,7 @@ This should bring us to the end of the year.
   - followed this :https://docs.microsoft.com/en-us/ef/core/get-started/overview/first-app?tabs=visual-studio
   - Finally created this repo.
   
- - Week 2
+- Week 2
   - Created services that reads the csv from a url input using the following sites for assistance/inspiration: https://stackoverflow.com/questions/54460971/c-sharp-read-csv-from-url-and-save-to-database & https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-6.0
   - Created a service that accepts a list of strings and transforms these CSV strings into a raw data object (not data models used in the db)
   - Created API controller to test it works
