@@ -5,7 +5,7 @@ When downloading, open the repository and open package manager console. You will
 ## Schedule
 
 - Week 1- Create Models + Database (Done)
-- Week 2- Create Service to download the excel file from https://www.football-data.co.uk/
+- Week 2- Create Service to download the excel file from https://www.football-data.co.uk/ (Done)
 - Week 3- Save the data into db if not previously saved.
 - Week 4- Investigate websites to pull fixtures from.
 - Week 5- Create service to download and save fixtures.
@@ -29,3 +29,9 @@ This should bring us to the end of the year.
   - Created the database context and ran pmc commands to create the initial migration and to create the database.
   - followed this :https://docs.microsoft.com/en-us/ef/core/get-started/overview/first-app?tabs=visual-studio
   - Finally created this repo.
+  
+ - Week 2
+  - Created services that reads the csv from a url input using the following sites for assistance/inspiration: https://stackoverflow.com/questions/54460971/c-sharp-read-csv-from-url-and-save-to-database & https://stackoverflow.com/questions/54460971/c-sharp-read-csv-from-url-and-save-to-database
+  - Created a service that accepts a list of strings and transforms these CSV strings into a raw data object (not data models used in the db)
+  - Created API controller to test it works
+  
