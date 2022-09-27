@@ -1,3 +1,6 @@
+using FootyTips.Services;
+using FootyTips.Services.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +9,9 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddTransient<IDataDownloadService, DataDownloadService>();
+builder.Services.AddTransient<IFootballDataTranslator, FootballDataTranslator>();
 
 var app = builder.Build();
 
