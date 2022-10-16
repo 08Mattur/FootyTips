@@ -17,7 +17,7 @@ namespace FootyTips.Controllers
         }
 
         [HttpGet("download")]
-        public async Task<bool> DownloadDataAndUpdateData()
+        public async Task<int> DownloadDataAndUpdateData()
         {
             return await _downloadService.Download("https://www.football-data.co.uk/mmz4281/2223/E0.csv");
         }
