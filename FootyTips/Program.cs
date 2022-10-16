@@ -12,6 +12,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddTransient<IDataDownloadService, DataDownloadService>();
 builder.Services.AddTransient<IFootballDataTranslator, FootballDataTranslator>();
+builder.Services.AddTransient<IPredictionService, PredictionService>();
 
 var app = builder.Build();
 

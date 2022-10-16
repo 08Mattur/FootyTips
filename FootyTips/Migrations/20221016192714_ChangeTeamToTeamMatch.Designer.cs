@@ -3,6 +3,7 @@ using System;
 using FootyTips.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FootyTips.Migrations
 {
     [DbContext(typeof(FootyTipsContext))]
-    partial class FootyTipsContextModelSnapshot : ModelSnapshot
+    [Migration("20221016192714_ChangeTeamToTeamMatch")]
+    partial class ChangeTeamToTeamMatch
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.8");
