@@ -35,3 +35,23 @@ This should bring us to the end of the year.
   - Created a service that accepts a list of strings and transforms these CSV strings into a raw data object (not data models used in the db)
   - Created API controller to test it works
   
+- Week of 16/10/2022
+  - Been a while since updating due to illness, childcare etc.
+  - Deviated from the planned week by week schedule
+  - This week: save if not already in db, basic prediction created from 2 teams input.
+  - So far the prediction brings back the >1.5 and BTTS stats for the match.
+  - Below is a breakdown of the result set (last 5 games):  
+    - MoreThan15Goals: The count of games that have had more than 1.5 goals where the team input has been a part of it
+    - MoreThan15GoalsPercent: The percentage of the above
+    - BTTS: The count of games both teams have scored where the team input has been a part of it
+    - BTTSPercent: percentage of the above
+    - ScoreMin1: count of games where the team input has scored at least 1
+    - ScoreMin1Percent: percentage of the above
+    - moreThan15Percent: total likelihood there will be more than 1.5 goals (MoreThan15GoalsPercent multiplied home * away)
+    - bttsPercent: total likelihood both teams will score (BTTSPercent multipied home * away)
+  - I ran the predictions for this week games with a caveat <0.45 percent would be a no and > 45% is a yes, the predictions got 5/10 >1.5 goals correct and 4/10 BTTS       correct. 
+  - Although there were some odd results this week and tough games to predict. 
+    - Liverpool 1 - 0 City
+    - Leeds 0 - Arsenal 1
+    - United 0 - 0 Newcastle
+  
